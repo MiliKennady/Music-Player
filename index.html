@@ -3,269 +3,777 @@
 <head>
 	<meta charset="utf-8">
 	<title>Ninja Stdio</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="Assets/home.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body class="dark-blue body-container">
 
-<header >
+<header>
 	
-	<div class="dark-blue header-flex header-padding">
-		
-		<div class="flex-for-musicplayericon"><!--  musicplayer icon and name -->
-			<img src="Assets/images/musicplayericon.png">
-			<span><h4 class="white-font">Ninja Player</h4></span>
+	<div class="dark-blue top-header-container">
+
+		<div class="top-header-left-container">
+			<div class="flex-for-musicplayericon"><!--  musicplayer icon and name -->
+				<img src="Assets/images/musicplayericon.png">
+				<span><h4 class="white-font">Ninja Player</h4></span>
+			</div>
+	
+			<div class="flex-for-header-components fav-container"><!-- favorites heading -->
+				<h4 class="white-font">Favorites</h4>
+			</div>
 		</div>
 
-		<div class="flex-for-header-components fav-container"><!-- favorites heading -->
-			<h4 class="white-font">Favorites</h4>
+
+		<div class="top-header-right-container">
+			<div><!-- search bar -->
+				<table class="searchcontainer">
+					<tr>
+						<td><img class="searchimg" src="Assets/images/searchicon.png"></td>
+						<td><input class="searchbox" type="text" name="" placeholder="Search"></td>
+						<td><img class="searchimg" src="Assets/images/micicon.png"></td>
+					</tr>
+				</table>
+	
+			</div><!-- notification icon -->
+				<img class="header-img" src="Assets/images/notificationicon.png">
+			<div>
+	
+			</div><!-- UserPhoto -->
+				<img class="header-img" src="Assets/images/usericon.png">
+			<div>
 		</div>
 
-		<div><!-- search bar -->
-			<table class="searchcontainer">
-				<tr>
-					<td><img class="searchimg" src="Assets/images/searchicon.png"></td>
-					<td><input class="searchbox" type="text" name="" placeholder="Search"></td>
-					<td><img class="searchimg" src="Assets/images/micicon.png"></td>
-				</tr>
-			</table>
-
-		</div><!-- notification icon -->
-			<img class="header-img" src="Assets/images/notificationicon.png">
-		<div>
-
-		</div><!-- UserPhoto -->
-			<img class="header-img" src="Assets/images/usericon.png">
-		<div>
-			
-		</div>
 	</div>
 </header>
 
-<main class="dark-blue header-flex mainflex" >
-	
-	<div class="margin-for-main-content">  <!-- carousel -->
-		<img class="carousel-img" src="Assets/images/onrepeatcarousel.jpg">
-		<img class="carousel-img" src="Assets/images/moodboostercarousel.jpg">
-		<img class="carousel-img" src="Assets/images/Internationalreleasecarousel.jpg">
-	</div>
+<main class="dark-blue main-container" >
 
-	<div class="margin-for-main-content mainflex"> <!-- latest release -->
-		<h3 class="white-font">Latest Release<h3>
+	<div class="main-container-left" id="aa">
+
+		<div class="carousel-container" id="bb">  <!-- carousel -->
+			<img id="carousel-img1" class="carousel-img" src="Assets/images/onrepeatcarousel.jpg">
+			<img id="carousel-img2" class="carousel-img" src="Assets/images/moodboostercarousel.jpg">
+			<!-- <img id="carousel-img1" class="carousel-img" src="Assets/images/Internationalreleasecarousel.jpg">
+			<img id="carousel-img2" class="carousel-img" src="Assets/images/Internationalreleasecarousel.jpg"> -->
+			<img id="carousel-img3" class="carousel-img" src="Assets/images/Internationalreleasecarousel.jpg">
+		</div>
+
+		<div class="latest-release-container"> <!--latest release-->
+			<div class="latest-release-title-container white-font">  
+				<h3>Latest Release</h3>
+			</div>
+			<div class="latest-release-songs-container">
+				<div class="each-released-song-container">
+					<div class="each-released-song-left-container">
+						<div class="each-released-song-image">
+							<img class="latest-release-img" src="Assets/images/happierlatestrelease.jpg">
+						</div>
+						<div class="each-released-song-details">
+							<h6 class="white-font">Happier</h6>
+							<h6 class="white-font">11th August</h6>
+						</div>
+					</div>
+					<div class="each-released-song-right-container">
+						<i class="fa fas fa-ellipsis-h" style="color: white;"></i>
+						<h6 class="white-font">4:44</h6>
+					</div>
+				</div>
+
+				<div class="each-released-song-container">
+					<div class="each-released-song-left-container">
+						<div class="each-released-song-image">
+							<img class="latest-release-img" src="Assets/images/industrybabylatestrelease.jpg">
+						</div>
+						<div class="each-released-song-details">
+							<h6 class="white-font">Industry Baby</h6>
+							<h6 class="white-font">11th August</h6>
+						</div>
+					</div>
+					<div class="each-released-song-right-container">
+						<i class="fa fas fa-ellipsis-h" style="color: white;"></i>
+						<h6 class="white-font">4:44</h6>
+					</div>
+				</div>
+
+				<div class="each-released-song-container">
+					<div class="each-released-song-left-container">
+						<div class="each-released-song-image">
+							<img class="latest-release-img" src="Assets/images/womanlatestrelease.png">
+						</div>
+						<div class="each-released-song-details">
+							<h6 class="white-font">Woman</h6>
+							<h6 class="white-font">11th August</h6>
+						</div>
+					</div>
+					<div class="each-released-song-right-container">
+						<i class="fa fas fa-ellipsis-h" style="color: white;"></i>
+						<h6 class="white-font">4:44</h6>
+					</div>
+				</div>
+
+				<div class="each-released-song-container">
+					<div class="each-released-song-left-container">
+						<div class="each-released-song-image">
+							<img class="latest-release-img" src="Assets/images/staylatestrelease.jpg">
+						</div>
+						<div class="each-released-song-details">
+							<h6 class="white-font">Stay</h6>
+							<h6 class="white-font">11th August</h6>
+						</div>
+					</div>
+					<div class="each-released-song-right-container">
+						<i class="fa fas fa-ellipsis-h" style="color: white;"></i>
+						<h6 class="white-font">4:44</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="popular-artist-container"> <!--popular artist-->
+			<div class="popular-artist-title-container white-font">
+				<h3>Popular Aritist</h3>
+			</div>
+			<div class="popular-artist-images-container">
+				<div class="each-popular-artist-image-and-title">
+					<div class="each-popular-artist-image">
+						<img class="artist-img" src="Assets/images/21pilotsartists.jpg">
+					</div>
+					<div class="each-popular-artist-title">
+						<h6 class="white-font">21 Pilots</h6>
+					</div>
+					</div>
+					<div class="each-popular-artist-image-and-title">
+						<div class="each-popular-artist-image">
+							<img class="artist-img" src="Assets/images/charlieputhartists.jpg">
+						</div>
+						<div class="each-popular-artist-title">
+							<h6 class="white-font">Charlie Puth</h6>
+						</div>
+					</div>
+				<div class="each-popular-artist-image-and-title">
+					<div class="each-popular-artist-image">
+						<img class="artist-img" src="Assets/images/dojacatartists.jpg">
+					</div>
+					<div class="each-popular-artist-title">
+						<h6 class="white-font">Doja Cat</h6>
+					</div>
+				</div>
+				<div class="each-popular-artist-image-and-title">
+					<div class="each-popular-artist-image">
+						<img class="artist-img" src="Assets/images/harrystylesartists.jpg">
+					</div>
+					<div class="each-popular-artist-title">
+						<h6 class="white-font">Harry Styles</h6>
+					</div>
+				</div>
+				<div class="each-popular-artist-image-and-title">
+					<div class="each-popular-artist-image">
+						<img class="artist-img" src="Assets/images/lizzoartists.jpg">
+					</div>
+					<div class="each-popular-artist-title">
+						<h6 class="white-font">Lizzo</h6>
+					</div>
+				</div>
+				<div class="each-popular-artist-image-and-title">
+					<div class="each-popular-artist-image">
+						<img class="artist-img" src="Assets/images/slowkidsatplayartists.jpg">
+					</div>
+					<div class="each-popular-artist-title">
+						<h6 class="white-font">Slow Kids at Play</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="stations-container"> <!--stations to listen-->
+			<div class="genre-image-container">
+				<img class="genre-img" src="Assets/images/chillgenre.jpg">
+				<div class="text-over-image white-font"><h2>Chill</h2></div>
+			</div>
 			
-			<div class="latest-release-flex latest-release-margin">
-				<div class="song-flex song-margin">
-					<div><img class="latest-release-img" src="Assets/images/happierlatestrelease.jpg"></div>
-					<div class="inside-song-margin">
-						<h6 class="white-font">Happier</h6>
-						<h6 class="white-font">11th August</h6>
+			<div class="genre-image-container">
+				<img class="genre-img" src="Assets/images/lovegenre.jpg">
+				<div class="text-over-image white-font"><h2>Love</h2></div>
+			</div >	
+
+			<div class="genre-image-container">
+				<img class="genre-img" src="Assets/images/popgenre.jpg">
+				<div class="text-over-image white-font"><h2>Pop</h2></div>
+			</div>
+
+			<div class="genre-image-container">
+				<img class="genre-img" src="Assets/images/retrogenre.jpg">
+				<div class="text-over-image white-font"><h2>Retro</h2></div>
+			</div>
+
+			<div class="genre-image-container">
+				<img class="genre-img" src="Assets/images/rockgenre.jpg">
+				<div class="text-over-image white-font"><h2>Rock</h2></div>
+			</div>
+
+			<div class="genre-image-container">
+				<img class="genre-img" src="Assets/images/workoutgenre.jpg">
+				<div class="text-over-image white-font"><h2>Workout</h2></div>
+			</div>
+		</div>
+
+		<div class="mix-container"> <!--mix of songs-->
+			<div class="mix-image-container">
+				<img class="mix-img" src="Assets/images/partymix.jpg">
+				<div class="text-over-image white-font"><h2>Party</h2></div>
+			</div>
+			
+			<div class="mix-image-container">
+				<img class="mix-img" src="Assets/images/electronicmix.jpg">
+				<div class="text-over-image white-font"><h2>Electronic</h2></div>
+			</div >	
+
+			<div class="mix-image-container">
+				<img class="mix-img" src="Assets/images/roadtripmix.jpg">
+				<div class="text-over-image white-font"><h2>RoadTrip</h2></div>
+			</div>
+		</div>
+
+		<div class="latest-english-songs-container"> <!--Latest English Songs-->
+			<div class="latest-english-song-title white-font">
+				<h3>Latest English Songs</h3>
+			</div>
+			<div class="latest-english-song-container">
+				
+				<div class="latest-english-song-each-container">
+					<div class="latest-english-song-each-image">
+						<img class="latest-english-song-image" src="Assets/images/recentenglishsong1.jpg">
 					</div>
-					<div class="inside-song-margin">
-						<img class="searchimg" src="Assets/images/dropdownicon.png">
-						<h6 class="white-font">4:44</h6>
+					<div class="latest-english-song-each-detail white-font font-size">
+						<p>Havanna</p>
+						<p>11th August, 2018</p>
 					</div>
 				</div>
-		
-				<div class="song-flex song-margin">
-					<div><img class="latest-release-img" src="Assets/images/industrybabylatestrelease.jpg"></div>
-					<div class="inside-song-margin">
-						<h6 class="white-font">Industry Baby</h6>
-						<h6 class="white-font">11th August</h6>
+
+				<div class="latest-english-song-each-container">
+					<div class="latest-english-song-each-image">
+						<img class="latest-english-song-image" src="Assets/images/recentenglishsong2.jpg">
 					</div>
-					<div class="inside-song-margin">
-						<img class="searchimg" src="Assets/images/dropdownicon.png">
-						<h6 class="white-font">4:44</h6>
+					<div class="latest-english-song-each-detail white-font font-size">
+						<p>Butter</p>
+						<p>11th August, 2018</p>
 					</div>
+				</div>
+
+				<div class="latest-english-song-each-container">
+					<div class="latest-english-song-each-image">
+						<img class="latest-english-song-image" src="Assets/images/recentenglishsong3.jpg">
+					</div>
+					<div class="latest-english-song-each-detail white-font font-size">
+						<p>Blinding Lights</p>
+						<p>11th August, 2018</p>
+					</div>
+				</div>
+
+				<div class="latest-english-song-each-container">
+					<div class="latest-english-song-each-image">
+						<img class="latest-english-song-image" src="Assets/images/recentenglishsong4.jpg">
+					</div>
+					<div class="latest-english-song-each-detail white-font font-size">
+						<p>Love Me Again</p>
+						<p>11th August, 2018</p>
+					</div>
+				</div>
+
+				<div class="latest-english-song-each-container">
+					<div class="latest-english-song-each-image">
+						<img class="latest-english-song-image" src="Assets/images/recentenglishsong5.jpg">
+					</div>
+					<div class="latest-english-song-each-detail white-font font-size">
+						<p>Reputation</p>
+						<p>11th August, 2018</p>
+					</div>
+				</div>
+
+				<div class="latest-english-song-each-container">
+					<div class="latest-english-song-each-image">
+						<img class="latest-english-song-image" src="Assets/images/recentenglishsong6.jpg">
+					</div>
+					<div class="latest-english-song-each-detail white-font font-size">
+						<p>Sour</p>
+						<p>11th August, 2018</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="latest-english-songs-container"> <!--Latest Hindi Songs-->
+			<div class="latest-english-song-title white-font">
+				<h3>Latest Hindi Songs</h3>
+			</div>
+			<div class="latest-english-song-container">
+				
+				<div class="latest-english-song-each-container">
+					<div class="latest-english-song-each-image">
+						<img class="latest-english-song-image" src="Assets/images/recentenglishsong1.jpg">
+					</div>
+					<div class="latest-english-song-each-detail white-font font-size">
+						<p>Havanna</p>
+						<p>11th August, 2018</p>
+					</div>
+				</div>
+
+				<div class="latest-english-song-each-container">
+					<div class="latest-english-song-each-image">
+						<img class="latest-english-song-image" src="Assets/images/recentenglishsong2.jpg">
+					</div>
+					<div class="latest-english-song-each-detail white-font font-size">
+						<p>Butter</p>
+						<p>11th August, 2018</p>
+					</div>
+				</div>
+
+				<div class="latest-english-song-each-container">
+					<div class="latest-english-song-each-image">
+						<img class="latest-english-song-image" src="Assets/images/recentenglishsong3.jpg">
+					</div>
+					<div class="latest-english-song-each-detail white-font font-size">
+						<p>Blinding Lights</p>
+						<p>11th August, 2018</p>
+					</div>
+				</div>
+
+				<div class="latest-english-song-each-container">
+					<div class="latest-english-song-each-image">
+						<img class="latest-english-song-image" src="Assets/images/recentenglishsong4.jpg">
+					</div>
+					<div class="latest-english-song-each-detail white-font font-size">
+						<p>Love Me Again</p>
+						<p>11th August, 2018</p>
+					</div>
+				</div>
+
+				<div class="latest-english-song-each-container">
+					<div class="latest-english-song-each-image">
+						<img class="latest-english-song-image" src="Assets/images/recentenglishsong5.jpg">
+					</div>
+					<div class="latest-english-song-each-detail white-font font-size">
+						<p>Reputation</p>
+						<p>11th August, 2018</p>
+					</div>
+				</div>
+
+				<div class="latest-english-song-each-container">
+					<div class="latest-english-song-each-image">
+						<img class="latest-english-song-image" src="Assets/images/recentenglishsong6.jpg">
+					</div>
+					<div class="latest-english-song-each-detail white-font font-size">
+						<p>Sour</p>
+						<p>11th August, 2018</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="main-container-right-aside"> <!--aside container-->
+		<div class="aside-heading-container"> <!--for the titles-->
+			<div>
+				<h3 class="white-font">Queue</h3>
+			</div>
+			<div>
+				<h4 class="white-font">Queue</h4>
+			</div>
+		</div>
+
+		<div class="aside-song-list-container"> <!--for the list of songs-->
+			<div class="aside-song-list-each-container">
+				<div class="aside-song-list-each-left">
+					<div><h6 class="white-font">01</h6></div>
+					<div><img class="aside-image" src="Assets/images/staylatestrelease.jpg"></div>
+					<div class="aside-song-description">
+						<div class="white-font"><h5>Stay</h5></div>
+						<div class="white-font"><h6>Justin Beiber</h6></div>
+					</div>	
+				</div>
+				<div class="aside-song-list-each-right">
+					<i class="fa far fa-heart heart-padding" style="color: white;"></i>
+				</div>
+			</div>
+
+			<div class="aside-song-list-each-container">
+				<div class="aside-song-list-each-left">
+					<div><h6 class="white-font">01</h6></div>
+					<div><img class="aside-image" src="Assets/images/staylatestrelease.jpg"></div>
+					<div class="aside-song-description">
+						<div class="white-font"><h5>Stay</h5></div>
+						<div class="white-font"><h6>Justin Beiber</h6></div>
+					</div>	
+				</div>
+				<div class="aside-song-list-each-right">
+					<i class="fa far fa-heart heart-padding" style="color: white;"></i>
+				</div>
+			</div>
+
+			<div class="aside-song-list-each-container">
+				<div class="aside-song-list-each-left">
+					<div><h6 class="white-font">01</h6></div>
+					<div><img class="aside-image" src="Assets/images/staylatestrelease.jpg"></div>
+					<div class="aside-song-description">
+						<div class="white-font"><h5>Stay</h5></div>
+						<div class="white-font"><h6>Justin Beiber</h6></div>
+					</div>	
+				</div>
+				<div class="aside-song-list-each-right">
+					<i class="fa far fa-heart heart-padding" style="color: white;"></i>
+				</div>
+			</div>
+
+			<div class="aside-song-list-each-container">
+				<div class="aside-song-list-each-left">
+					<div><h6 class="white-font">01</h6></div>
+					<div><img class="aside-image" src="Assets/images/staylatestrelease.jpg"></div>
+					<div class="aside-song-description">
+						<div class="white-font"><h5>Stay</h5></div>
+						<div class="white-font"><h6>Justin Beiber</h6></div>
+					</div>	
+				</div>
+				<div class="aside-song-list-each-right">
+					<i class="fa far fa-heart heart-padding" style="color: white;"></i>
+				</div>
+			</div>
+
+			<div class="aside-song-list-each-container">
+				<div class="aside-song-list-each-left">
+					<div><h6 class="white-font">01</h6></div>
+					<div><img class="aside-image" src="Assets/images/staylatestrelease.jpg"></div>
+					<div class="aside-song-description">
+						<div class="white-font"><h5>Stay</h5></div>
+						<div class="white-font"><h6>Justin Beiber</h6></div>
+					</div>	
+				</div>
+				<div class="aside-song-list-each-right">
+					<i class="fa far fa-heart heart-padding" style="color: white;"></i>
+				</div>
+			</div>
+
+			<div class="aside-song-list-each-container">
+				<div class="aside-song-list-each-left">
+					<div><h6 class="white-font">01</h6></div>
+					<div><img class="aside-image" src="Assets/images/staylatestrelease.jpg"></div>
+					<div class="aside-song-description">
+						<div class="white-font"><h5>Stay</h5></div>
+						<div class="white-font"><h6>Justin Beiber</h6></div>
+					</div>	
+				</div>
+				<div class="aside-song-list-each-right">
+					<i class="fa far fa-heart heart-padding" style="color: white;"></i>
+				</div>
+			</div>
+
+			<div class="aside-song-list-each-container">
+				<div class="aside-song-list-each-left">
+					<div><h6 class="white-font">01</h6></div>
+					<div><img class="aside-image" src="Assets/images/staylatestrelease.jpg"></div>
+					<div class="aside-song-description">
+						<div class="white-font"><h5>Stay</h5></div>
+						<div class="white-font"><h6>Justin Beiber</h6></div>
+					</div>	
+				</div>
+				<div class="aside-song-list-each-right">
+					<i class="fa far fa-heart heart-padding" style="color: white;"></i>
+				</div>
+			</div>
+
+			<div class="aside-song-list-each-container">
+				<div class="aside-song-list-each-left">
+					<div><h6 class="white-font">01</h6></div>
+					<div><img class="aside-image" src="Assets/images/staylatestrelease.jpg"></div>
+					<div class="aside-song-description">
+						<div class="white-font"><h5>Stay</h5></div>
+						<div class="white-font"><h6>Justin Beiber</h6></div>
+					</div>	
+				</div>
+				<div class="aside-song-list-each-right">
+					<i class="fa far fa-heart heart-padding" style="color: white;"></i>
+				</div>
+			</div>
+
+			<div class="aside-song-list-each-container">
+				<div class="aside-song-list-each-left">
+					<div><h6 class="white-font">01</h6></div>
+					<div><img class="aside-image" src="Assets/images/staylatestrelease.jpg"></div>
+					<div class="aside-song-description">
+						<div class="white-font"><h5>Stay</h5></div>
+						<div class="white-font"><h6>Justin Beiber</h6></div>
+					</div>	
+				</div>
+				<div class="aside-song-list-each-right">
+					<i class="fa far fa-heart heart-padding" style="color: white;"></i>
+				</div>
+			</div>
+
+			<div class="aside-song-list-each-container">
+				<div class="aside-song-list-each-left">
+					<div><h6 class="white-font">01</h6></div>
+					<div><img class="aside-image" src="Assets/images/staylatestrelease.jpg"></div>
+					<div class="aside-song-description">
+						<div class="white-font"><h5>Stay</h5></div>
+						<div class="white-font"><h6>Justin Beiber</h6></div>
+					</div>	
+				</div>
+				<div class="aside-song-list-each-right">
+					<i class="fa far fa-heart heart-padding" style="color: white;"></i>
+				</div>
+			</div>
+
+			<div class="aside-song-list-each-container">
+				<div class="aside-song-list-each-left">
+					<div><h6 class="white-font">01</h6></div>
+					<div><img class="aside-image" src="Assets/images/staylatestrelease.jpg"></div>
+					<div class="aside-song-description">
+						<div class="white-font"><h5>Stay</h5></div>
+						<div class="white-font"><h6>Justin Beiber</h6></div>
+					</div>	
+				</div>
+				<div class="aside-song-list-each-right">
+					<i class="fa far fa-heart heart-padding" style="color: white;"></i>
+				</div>
+			</div>
+
+			<div class="aside-song-list-each-container">
+				<div class="aside-song-list-each-left">
+					<div><h6 class="white-font">01</h6></div>
+					<div><img class="aside-image" src="Assets/images/staylatestrelease.jpg"></div>
+					<div class="aside-song-description">
+						<div class="white-font"><h5>Stay</h5></div>
+						<div class="white-font"><h6>Justin Beiber</h6></div>
+					</div>	
+				</div>
+				<div class="aside-song-list-each-right">
+					<i class="fa far fa-heart heart-padding" style="color: white;"></i>
+				</div>
+			</div>
+
+			<div class="aside-song-list-each-container">
+				<div class="aside-song-list-each-left">
+					<div><h6 class="white-font">01</h6></div>
+					<div><img class="aside-image" src="Assets/images/staylatestrelease.jpg"></div>
+					<div class="aside-song-description">
+						<div class="white-font"><h5>Stay</h5></div>
+						<div class="white-font"><h6>Justin Beiber</h6></div>
+					</div>	
+				</div>
+				<div class="aside-song-list-each-right">
+					<i class="fa far fa-heart heart-padding" style="color: white;"></i>
+				</div>
+			</div>
+
+			<div class="aside-song-list-each-container">
+				<div class="aside-song-list-each-left">
+					<div><h6 class="white-font">01</h6></div>
+					<div><img class="aside-image" src="Assets/images/staylatestrelease.jpg"></div>
+					<div class="aside-song-description">
+						<div class="white-font"><h5>Stay</h5></div>
+						<div class="white-font"><h6>Justin Beiber</h6></div>
+					</div>	
+				</div>
+				<div class="aside-song-list-each-right">
+					<i class="fa far fa-heart heart-padding" style="color: white;"></i>
+				</div>
+			</div>
+
+			<div class="aside-song-list-each-container">
+				<div class="aside-song-list-each-left">
+					<div><h6 class="white-font">01</h6></div>
+					<div><img class="aside-image" src="Assets/images/staylatestrelease.jpg"></div>
+					<div class="aside-song-description">
+						<div class="white-font"><h5>Stay</h5></div>
+						<div class="white-font"><h6>Justin Beiber</h6></div>
+					</div>	
+				</div>
+				<div class="aside-song-list-each-right">
+					<i class="fa far fa-heart heart-padding" style="color: white;"></i>
+				</div>
+			</div>
+
+			<div class="aside-song-list-each-container">
+				<div class="aside-song-list-each-left">
+					<div><h6 class="white-font">01</h6></div>
+					<div><img class="aside-image" src="Assets/images/staylatestrelease.jpg"></div>
+					<div class="aside-song-description">
+						<div class="white-font"><h5>Stay</h5></div>
+						<div class="white-font"><h6>Justin Beiber</h6></div>
+					</div>	
+				</div>
+				<div class="aside-song-list-each-right">
+					<i class="fa far fa-heart heart-padding" style="color: white;"></i>
+				</div>
+			</div>
+
+			<div class="aside-song-list-each-container">
+				<div class="aside-song-list-each-left">
+					<div><h6 class="white-font">01</h6></div>
+					<div><img class="aside-image" src="Assets/images/staylatestrelease.jpg"></div>
+					<div class="aside-song-description">
+						<div class="white-font"><h5>Stay</h5></div>
+						<div class="white-font"><h6>Justin Beiber</h6></div>
+					</div>	
+				</div>
+				<div class="aside-song-list-each-right">
+					<i class="fa far fa-heart heart-padding" style="color: white;"></i>
+				</div>
+			</div>
+
+			<div class="aside-song-list-each-container">
+				<div class="aside-song-list-each-left">
+					<div><h6 class="white-font">01</h6></div>
+					<div><img class="aside-image" src="Assets/images/staylatestrelease.jpg"></div>
+					<div class="aside-song-description">
+						<div class="white-font"><h5>Stay</h5></div>
+						<div class="white-font"><h6>Justin Beiber</h6></div>
+					</div>	
+				</div>
+				<div class="aside-song-list-each-right">
+					<i class="fa far fa-heart heart-padding" style="color: white;"></i>
+				</div>
+			</div>
+
+			<div class="aside-song-list-each-container">
+				<div class="aside-song-list-each-left">
+					<div><h6 class="white-font">01</h6></div>
+					<div><img class="aside-image" src="Assets/images/staylatestrelease.jpg"></div>
+					<div class="aside-song-description">
+						<div class="white-font"><h5>Stay</h5></div>
+						<div class="white-font"><h6>Justin Beiber</h6></div>
+					</div>	
+				</div>
+				<div class="aside-song-list-each-right">
+					<i class="fa far fa-heart heart-padding" style="color: white;"></i>
 				</div>
 			</div>
 			
-			<div class="latest-release-flex latest-release-margin">
-				<div class="song-flex song-margin">
-					<div><img class="latest-release-img" src="Assets/images/womanlatestrelease.png"></div>
-					<div class="inside-song-margin">
-						<h6 class="white-font">Woman</h6>
-						<h6 class="white-font">11th August</h6>
-					</div>
-					<div class="inside-song-margin">
-						<img class="searchimg" src="Assets/images/dropdownicon.png">
-						<h6 class="white-font">4:44</h6>
-					</div>
+			<div class="aside-song-list-each-container">
+				<div class="aside-song-list-each-left">
+					<div><h6 class="white-font">01</h6></div>
+					<div><img class="aside-image" src="Assets/images/staylatestrelease.jpg"></div>
+					<div class="aside-song-description">
+						<div class="white-font"><h5>Stay</h5></div>
+						<div class="white-font"><h6>Justin Beiber</h6></div>
+					</div>	
 				</div>
+				<div class="aside-song-list-each-right">
+					<i class="fa far fa-heart heart-padding" style="color: white;"></i>
+				</div>
+			</div>
+
+			<div class="aside-song-list-each-container">
+				<div class="aside-song-list-each-left">
+					<div><h6 class="white-font">01</h6></div>
+					<div><img class="aside-image" src="Assets/images/staylatestrelease.jpg"></div>
+					<div class="aside-song-description">
+						<div class="white-font"><h5>Stay</h5></div>
+						<div class="white-font"><h6>Justin Beiber</h6></div>
+					</div>	
+				</div>
+				<div class="aside-song-list-each-right">
+					<i class="fa far fa-heart heart-padding" style="color: white;"></i>
+				</div>
+			</div>
+
+			<div class="aside-song-list-each-container">
+				<div class="aside-song-list-each-left">
+					<div><h6 class="white-font">01</h6></div>
+					<div><img class="aside-image" src="Assets/images/staylatestrelease.jpg"></div>
+					<div class="aside-song-description">
+						<div class="white-font"><h5>Stay</h5></div>
+						<div class="white-font"><h6>Justin Beiber</h6></div>
+					</div>	
+				</div>
+				<div class="aside-song-list-each-right">
+					<i class="fa far fa-heart heart-padding" style="color: white;"></i>
+				</div>
+			</div>
+
+			<div class="aside-song-list-each-container">
+				<div class="aside-song-list-each-left">
+					<div><h6 class="white-font">01</h6></div>
+					<div><img class="aside-image" src="Assets/images/staylatestrelease.jpg"></div>
+					<div class="aside-song-description">
+						<div class="white-font"><h5>Stay</h5></div>
+						<div class="white-font"><h6>Justin Beiber</h6></div>
+					</div>	
+				</div>
+				<div class="aside-song-list-each-right">
+					<i class="fa far fa-heart heart-padding" style="color: white;"></i>
+				</div>
+			</div>
+
+			<div class="aside-song-list-each-container">
+				<div class="aside-song-list-each-left">
+					<div><h6 class="white-font">01</h6></div>
+					<div><img class="aside-image" src="Assets/images/staylatestrelease.jpg"></div>
+					<div class="aside-song-description">
+						<div class="white-font"><h5>Stay</h5></div>
+						<div class="white-font"><h6>Justin Beiber</h6></div>
+					</div>	
+				</div>
+				<div class="aside-song-list-each-right">
+					<i class="fa far fa-heart heart-padding" style="color: white;"></i>
+				</div>
+			</div>
+
+			<div class="aside-song-list-each-container">
+				<div class="aside-song-list-each-left">
+					<div><h6 class="white-font">01</h6></div>
+					<div><img class="aside-image" src="Assets/images/staylatestrelease.jpg"></div>
+					<div class="aside-song-description">
+						<div class="white-font"><h5>Stay</h5></div>
+						<div class="white-font"><h6>Justin Beiber</h6></div>
+					</div>	
+				</div>
+				<div class="aside-song-list-each-right">
+					<i class="fa far fa-heart heart-padding" style="color: white;"></i>
+				</div>
+			</div>
+
 		
-				<div class="song-flex song-margin">
-					<div><img class="latest-release-img" src="Assets/images/staylatestrelease.jpg"></div>
-					<div class="inside-song-margin">
-						<h6 class="white-font">Stay</h6>
-						<h6 class="white-font">11th August</h6>
-					</div>
-					<div class="inside-song-margin">
-						<img class="searchimg" src="Assets/images/dropdownicon.png">
-						<h6 class="white-font">4:44</h6>
-					</div>
-				</div>
-			</div>
-			
-	</div>
-
-	<div class="margin-for-main-content"> <!-- popular artist -->
-		<h3 class="white-font">Popular Artists<h3>
-		<div class="song-flex">
-			<div class="artist-flex">
-				<img class="artist-img" src="Assets/images/21pilotsartists.jpg">
-				<h6 class="white-font">21 Pilots</h6>
-			</div>
 		</div>
-		<div class="song-flex">
-			<div class="artist-flex">
-				<img class="artist-img" src="Assets/images/charlieputhartists.jpg">
-				<h6 class="white-font">Charlie Puth</h6>
-			</div>
-		</div>
-		<div class="song-flex">
-			<div class="artist-flex">
-				<img class="artist-img" src="Assets/images/dojacatartists.jpg">
-				<h6 class="white-font">Doja Cat</h6>
-			</div>
-		</div>
-		<div class="song-flex">
-			<div class="artist-flex">
-				<img class="artist-img" src="Assets/images/harrystylesartists.jpg">
-				<h6 class="white-font">Harry Styles</h6>
-			</div>
-		</div>
-		<div class="song-flex">
-			<div class="artist-flex">
-				<img class="artist-img" src="Assets/images/lizzoartists.jpg">
-				<h6 class="white-font">Lizzo</h6>
-			</div>
-		</div>
-		<div class="song-flex">
-			<div class="artist-flex">
-				<img class="artist-img" src="Assets/images/slowkidsatplayartists.jpg">
-				<h6 class="white-font">Slow Kids At Play</h6>
-			</div>
-		</div>
-	</div>
-
-	<div class="margin-for-main-content"> <!-- genre -->
-		<div class="genre-flex  genrecontainer">
-				
-				<div class="image-contatiner">
-					<img class="genre-img" src="Assets/images/chillgenre.jpg">
-					<div class="text-over-image white-font"><h2>Chill</h2></div>
-				</div>
-				
-				<div class="image-contatiner">
-					<img class="genre-img" src="Assets/images/lovegenre.jpg">
-					<div class="text-over-image white-font"><h2>Love</h2></div>
-				</div >	
-
-				<div class="image-contatiner">
-					<img class="genre-img" src="Assets/images/popgenre.jpg">
-					<div class="text-over-image white-font"><h2>Pop</h2></div>
-				</div>
-
-				<div class="image-contatiner">
-					<img class="genre-img" src="Assets/images/retrogenre.jpg">
-					<div class="text-over-image white-font"><h2>Retro</h2></div>
-				</div>
-
-				<div class="image-contatiner">
-					<img class="genre-img" src="Assets/images/rockgenre.jpg">
-					<div class="text-over-image white-font"><h2>Rock</h2></div>
-				</div>
-
-				<div class="image-contatiner">
-					<img class="genre-img" src="Assets/images/workoutgenre.jpg">
-					<div class="text-over-image white-font"><h2>Workout</h2></div>
-				</div>
-		</div>
-		
-	</div>
-
-	<div class="margin-for-main-content">  <!-- mix -->
-		<div class="genre-flex">
-				<div class="image-contatiner">
-					<img class="mix-img" src="Assets/images/partymix.jpg">
-					<div class="text-over-image white-font"><h2>Chill</h2></div>
-				</div>
-				
-				<div class="image-contatiner">
-					<img class="mix-img" src="Assets/images/electronicmix.jpg">
-					<div class="text-over-image white-font"><h2>Love</h2></div>
-				</div >	
-
-				<div class="image-contatiner">
-					<img class="mix-img" src="Assets/images/roadtripmix.jpg">
-					<div class="text-over-image white-font"><h2>RoadTrip</h2></div>
-				</div>
-
-		</div>
-	</div>
-	</div>
-
-	<div class="margin-for-main-content"> <!-- latest English -->
-		<h3 class="white-font">Latest Release<h3>
-			<div class="a-flex">
-				<div><img src="Assets/images/recentenglishsong1.jpg"></div>
-				<div>
-					<h6 class="white-font">Name</h6>
-					<h6 class="white-font">August 11</h6>
-				</div>
-			</div>
-			<div>
-				<div><img src="Assets/images/recentenglishsong2.jpg"></div>
-				<div>
-					<h6 class="white-font">Name</h6>
-					<h6 class="white-font">August 11</h6>
-				</div>
-			</div>
-
-			<div>
-				<div><img src="Assets/images/recentenglishsong3.jpg"></div>
-				<div>
-					<h6 class="white-font">Name</h6>
-					<h6 class="white-font">August 11</h6>
-				</div>
-			</div>
-
-			<div>
-				<div><img src="Assets/images/recentenglishsong4.jpg"></div>
-				<div>
-					<h6 class="white-font">Name</h6>
-					<h6 class="white-font">August 11</h6>
-				</div>
-			</div>
-
-			<div>
-				<div><img src="Assets/images/recentenglishsong5.jpg"></div>
-				<div>
-					<h6 class="white-font">Name</h6>
-					<h6 class="white-font">August 11</h6>
-				</div>
-			</div>
-
-			<div>
-				<div><img src="Assets/images/recentenglishsong6.jpg"></div>
-				<div>
-					<h6 class="white-font">Name</h6>
-					<h6 class="white-font">August 11</h6>
-				</div>
-			</div>
 
 	</div>
 
-	<div class="margin-for-main-content"> <!-- latest hindi -->
-		
-	</div>
-
-	<aside> <!-- song queue -->
-		
-	</aside>
 </main>
 
 <footer>
-	
+	<div class="footer-container footer-color">
+
+		<div class="footer-left-container">
+			<div class="footer-left-image ">
+				<img src="Assets/images/musicplayerimage.jpg" alt="Cover Page of the song being played" class="aside-image">
+			</div>
+			<div class="footer-left-song-description white-font ">
+				<div><p>Call me by my name</p></div>
+				<div><p>Lil Nasx</p></div>
+			</div>
+			<div class="footer-left-icons ">
+				<div><i class="fa far fa-heart footer-icon-padding" style="color: white;"></i></div>
+				<div><i class="fa fas fa-ban footer-icon-padding" style="color: white;"></i></div>
+			</div>
+		</div>
+
+		<div class="footer-middle-container">
+			<audio controls>
+				<source src="Assets/images/Call_Me_By_Your_Name.com_.mp3" type="audio/mp3">
+			</audio>
+		</div>
+
+		<div class="footer-right-container ">
+			<div><i class="fa fas fa-indent footer-left-icon-padding" style="color: white;"></i></div>
+			<div><i class="fa fas fa-plug footer-left-icon-padding" style="color: white;" ></i></div>
+			<div><i class="fa fas fa-volume-up footer-left-icon-padding" style="color: white;"></i></div>
+			<div><input type="range" min="1" max="100" value="50" class="footer-icon-padding"></div>
+			<div><i class="fas fa-expand-alt footer-left-icon-padding" style="color: white;"></i></div>
+		</div>
+	</div>
 </footer>
 
 </body>
