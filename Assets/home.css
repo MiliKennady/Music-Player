@@ -1,6 +1,6 @@
 /*styles for header*/
 
-.body-container{
+body{
 	font-family: Arial, Helvetica, sans-serif;
 	margin-top: 0px;
 	padding-top: 0px;
@@ -183,6 +183,7 @@
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+	padding: 5px;
 }
 
 .latest-release-songs-container{
@@ -194,12 +195,20 @@
 }
 
 .each-released-song-container{
-	width: 50%;
+	width: 35%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	padding: 5px;
 }
 
+.each-released-song-image{
+	padding-right: 5px;
+}
+
+.each-released-song-details{
+	padding: 5px;
+}
 .each-released-song-left-container{
 	display: flex;
 }
@@ -357,7 +366,13 @@
 .latest-english-song-image{
 	height: 130px;
 	width: 130px;
+	border-radius: 3%;
 	/* padding: 5px; */
+}
+
+.latest-english-song-image:hover{
+	cursor: pointer;
+	box-shadow: 0 14px 18px 0 rgba(18, 25, 62, 1), 0 166px 200px 0 rgba(0, 0, 1, 0.19);
 }
 
 
@@ -463,4 +478,79 @@
 
 ::-webkit-scrollbar{  /*hiding scrollbars*/
 	display: none;
+}
+
+
+/*artist page styling*/
+
+.artist-main-container{
+	display: flex;
+	/* margin-top: 100px; */
+	padding-top: 80px;
+}
+
+.artist-left-container{
+	width: 75%;
+	display: flex;
+	flex-direction: column;
+}
+
+.artist-left-top-container{
+	display: flex;
+}
+
+.artist-image-styling{
+	height: 300px;
+	width: 300px;
+	padding: 10px;
+}
+
+.artist-left-top-description{
+	display: flex;
+	flex-direction: column;
+}
+
+.artist-left-top-name-and-followers{
+	display: flex;
+	justify-content: space-between;
+}
+.artist-left-top-play-and-follow{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.play-box-styling{
+	height: 44px;
+	width: 157px;
+	background-image:  linear-gradient(to right, #522bb8, #b244d9);
+	text-align: center;
+	vertical-align: middle;
+}
+
+.play-box-styling p{
+	text-align: center;
+	padding-top: 10px;
+}
+
+
+.artist-right-container{
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	padding-left:15px ;
+}
+
+.artist-right-top-similar-artist-title{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.artist-right-bottom-recently-played-title{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
