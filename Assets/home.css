@@ -1,7 +1,7 @@
-/*styles for header*/
+
 
 body{
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Work Sans', sans-serif;
 	margin-top: 0px;
 	padding-top: 0px;
 }
@@ -15,6 +15,8 @@ body{
 {
 	color: white;
 }
+
+/*styles for header*/
 
 .top-header-container
 {
@@ -83,6 +85,10 @@ body{
 	padding: 10px;
 }
 
+.align-bell{
+	padding-top: 25px;
+    padding-left: 5px;
+}
 /*styles for main section*/
 
 .main-container{ 
@@ -201,6 +207,36 @@ body{
 	justify-content: space-between;
 	padding: 5px;
 }
+/* //for the dropdown list */
+.dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #12193e;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	right: 5px;
+  }
+  
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	color: white;
+  }
+  
+  .dropdown-content a:hover {background-color: #263387;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  
+
 
 .each-released-song-image{
 	padding-right: 5px;
@@ -235,23 +271,34 @@ body{
 .popular-artist-images-container{
 	display: flex;
 	flex-direction: row;
+	margin-bottom: 10px;
 }
 
 .each-popular-artist-image-and-title{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 5px;
 }
 
+.each-popular-artist-image img:hover {
+	cursor: pointer;
+	background-color: #0b1026;
+	box-shadow: 0 0 111px rgba(82,43,184,1);
+}
 .stations-container{
 	background-color: #12193e;
 	display: flex;
-
+	margin-bottom: 5px;
+	margin-top: 5px;
+	border-radius: 2px;
+	width: 95%;
 }
 
 .mix-container{
 	display: flex;
 	flex-direction: row;
+	margin-top: 5px;
 }
 .song-flex
 {
@@ -291,6 +338,7 @@ body{
 	position: relative;
 	text-align: center;
 	color: white;
+	padding: 5px;
 }
 .text-over-image
 {
@@ -305,8 +353,10 @@ body{
 	color: white;
 	overflow: hidden;
 	height: 150px;
-	width: 300px;
+	width: 290px;
 	opacity: 70%;
+	padding-top: 5px;
+	padding-right: 10px;
 }
 
 .mix-image-container img{
@@ -400,11 +450,18 @@ body{
 .aside-song-list-each-container{
 	display: flex;
 	justify-content: space-between;
+	margin: 5px;
 }
 
+.aside-song-list-each-container:hover {
+	background-color: #191e32;
+	cursor: pointer;
+}
 .aside-song-list-each-left{
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 .aside-image{
 	height: 50px;
@@ -420,11 +477,19 @@ body{
 
 .aside-song-description h5,h6{
 	padding: 0px;
+	padding-bottom: 5px;
 	margin:0px;
 }
 
 .heart-padding{
 	padding: 20px;
+}
+.heart-change{
+	color: white;
+}
+.heart-change:hover {
+	color: #27d86d;
+	cursor: pointer;
 }
 
 /* footer styling */
@@ -450,6 +515,17 @@ body{
 	justify-content: space-between;
 	align-items: center;
 	/* vertical-align: middle; */
+	padding-top: 5px;
+    padding-left: 5px;
+}
+
+.footer-left-image{
+	padding-right: 5px;
+	padding-bottom: 3px;
+}
+
+.footer-left-icons{
+	padding-left: 9px;
 }
 
 .inside-footer-left-padding{
@@ -460,6 +536,9 @@ body{
 	padding: 2px;
 }
 
+.footer-middle-container{
+	padding-top: 5px;
+}
 .footer-right-container{
 	display: flex;
 	justify-content: space-between;
@@ -470,7 +549,9 @@ body{
 .footer-left-icon-padding{
 	padding: 9px;
 }
-
+.footer-left-song-description{
+	padding-left: 5px;
+}
 .footer-left-song-description div p{
 	padding: 0px;
 	margin: 0px;
@@ -487,6 +568,8 @@ body{
 	display: flex;
 	/* margin-top: 100px; */
 	padding-top: 80px;
+	margin-left: 40px;
+	margin-right: 40px;
 }
 
 .artist-left-container{
@@ -497,12 +580,14 @@ body{
 
 .artist-left-top-container{
 	display: flex;
+	background-color: #131b40;
 }
 
 .artist-image-styling{
 	height: 300px;
 	width: 300px;
 	padding: 10px;
+	
 }
 
 .artist-left-top-description{
@@ -513,14 +598,23 @@ body{
 .artist-left-top-name-and-followers{
 	display: flex;
 	justify-content: space-between;
+	padding-right: 10px;
+    margin-right: 5px;
+    padding-left: 5px;
+    margin-left: 10px;
+    margin-top: 15px;
+
 }
 .artist-left-top-play-and-follow{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
 }
-
-.play-box-styling{
+.play-and-follow-box-container{
+	padding: 5px;
+}
+.play-and-follow-box-styling{
 	height: 44px;
 	width: 157px;
 	background-image:  linear-gradient(to right, #522bb8, #b244d9);
@@ -528,12 +622,22 @@ body{
 	vertical-align: middle;
 }
 
-.play-box-styling p{
+.play-and-follow-box-styling:hover {
+	cursor: pointer;
+	background-image:  linear-gradient(to right, #063f21	, #35e080	);
+}
+
+.track-div-padding{
+	padding-top: 8px;
+}
+.follow-and-play-button-styling{
 	text-align: center;
 	padding-top: 10px;
 }
 
-
+.artist-left-bottom-container{
+	margin-top: 30px;
+}
 .artist-right-container{
 	width: 25%;
 	display: flex;
@@ -553,4 +657,9 @@ body{
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+}
+
+
+.follow-padding{
+	padding-bottom: 28px;
 }
